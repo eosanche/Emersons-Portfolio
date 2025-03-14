@@ -12,7 +12,7 @@
   
  <style>
    body {
-     background-color: #FFFEF8
+     background-color: #FFFEF8;
    }
    
    .parallax {
@@ -67,18 +67,22 @@
             vertical-align: middle;
         }
    
-   name-type {
+   nameani {
   position: relative;
-  display: inline-block;
          font-size: 55px;
      font-family: "Poppins", sans-serif;
+       font-weight: 600;
+     letter-spacing: 5px;
   animation-name: First-Name;
-  animation-duration: 3s;
+  animation-duration: 2s;
+   
 }
    
-   @keyframes example {
-  0%   {color: red; left: 50px; top: 200px;}
-  100% {color: red; left: 50px; top: 0px;}
+#nameani1 {animation-timing-function: ease;}
+   
+   @keyframes First-Name {
+  0%   {opacity: 0; top: 100px;}
+  100% {top: 0px;}
 }
   
   </style>
@@ -93,7 +97,7 @@
           </ul>
       </div>
     
-    <name-type>Emerson</name-type>
+    <nameani id="nameani1">EMERSON</nameani>
    
   </body>
   
