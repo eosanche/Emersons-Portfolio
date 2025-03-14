@@ -14,15 +14,13 @@
    body {
      background-color: #FFFEF8;
    }
-   
-   .parallax {
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
+   #vid {
+  position: fixed;
+  min-width: 100%; 
+  min-height: 10%;
+}
+   
    /*nav bar*/
    #nav {
         font-size: 1em;
@@ -67,8 +65,10 @@
             vertical-align: middle;
         }
    
+   /*text animation*/
    nameani {
   position: relative;
+     left: 30px;
          font-size: 55px;
      font-family: "Poppins", sans-serif;
        font-weight: 600;
@@ -85,8 +85,16 @@
   100% {top: 0px;}
 }
   
+   
+   
   </style>
+  </head>
   <body>
+    
+    <video autoplay muted loop id="vid">
+  <source src="Ghibli_Ani_Test_720p.mp4" type="video/mp4">
+</video>
+
 
     <div id="nav">
        <ul>
@@ -100,6 +108,4 @@
     <nameani id="nameani1">EMERSON</nameani>
    
   </body>
-  
-  </head>
 </html>
