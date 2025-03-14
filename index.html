@@ -16,9 +16,9 @@
    }
 
    #vid {
-  position: fixed;
-  min-width: 100%; 
-  min-height: 10%;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
 }
    
    /*nav bar*/
@@ -30,6 +30,7 @@
         float: left;
         width: 100%;
         margin-top: 15px;
+          position: absolute;
    }
    
    /*code for nav list*/
@@ -40,9 +41,8 @@
    
         #nav ul {
         margin: 5px 20px 0px 0px;
-        padding: 0px 10px;
+        padding: 5px;
           float: right;
-          
       }
 
       #nav a {
@@ -67,25 +67,58 @@
    
    /*text animation*/
    nameani {
-  position: relative;
+  position: absolute;
      left: 30px;
+      top: 20px;
          font-size: 55px;
      font-family: "Poppins", sans-serif;
        font-weight: 600;
      letter-spacing: 5px;
   animation-name: First-Name;
-  animation-duration: 2s;
-   
+  animation-duration: 1s;
 }
    
-#nameani1 {animation-timing-function: ease;}
+      lastnameani {
+  position: absolute;
+     left: 30px;
+        top: 80px;
+         font-size: 55px;
+     font-family: "Poppins", sans-serif;
+       font-weight: 600;
+     letter-spacing: 5px;
+  animation-name: Last-Name;
+  animation-duration: 1.5s;
+}
    
+         subheadingani {
+  position: absolute;
+     left: 30px;
+        top: 150px;
+         font-size: 20px;
+     font-family: "Poppins", sans-serif;
+       font-weight: 300;
+     letter-spacing: 5px;
+  animation-name: Sub-Name;
+  animation-duration: 1.5s;
+}
+   
+#nameani {animation-timing-function: ease;}
    @keyframes First-Name {
   0%   {opacity: 0; top: 100px;}
-  100% {top: 0px;}
+  100% {top: 20px;}
 }
-  
    
+   #lastnameani {animation-timing-function: ease;}
+     @keyframes Last-Name {
+  0%   {opacity: 0; top: 150px;}
+  100% {top: 80px;}
+}
+   
+      #subheadingani {animation-timing-function: ease;}
+     @keyframes Sub-Name {
+  0%   {opacity: 0; top: 250px;}
+  100% {top: 150px;}
+}
    
   </style>
   </head>
@@ -105,7 +138,9 @@
           </ul>
       </div>
     
-    <nameani id="nameani1">EMERSON</nameani>
+    <nameani id="nameani">EMERSON</nameani>
+    <lastnameani id="lastnameani">SANCHEZ</lastnameani>
+     <subheadingani id="subheadingani">Digital Artist</subheadingani>
    
   </body>
 </html>
