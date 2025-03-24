@@ -31,31 +31,40 @@
      font-family: "Poppins", sans-serif;
         padding: 5px 0px 5px 0px;
         clear: both;
-        float: left;
+        float: none;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 5px;
           position: absolute;
+     background-color: red;
+     
    }
    
    /*code for nav list*/
         #nav li {
         list-style: none;
         display: inline;
+         background-color: yellow;
       }
    
         #nav ul {
         margin: 5px 20px 0px 0px;
         padding: 5px;
           float: right;
+          
       }
 
       #nav a {
-        color: #1E2121;
+        color: #FFFFFF;
         text-decoration: none;
         padding: 10px;
+        
       }
 
       #nav a:hover {
+        color: #aeaca8;
+      }
+   
+    #nav a:clicked {
         color: #aeaca8;
       }
    
@@ -64,7 +73,7 @@
         height: 15px;
         width: 2px;
         border-radius: 50px;
-            background-color: #1E2121; 
+            background-color: #FFFFFF; 
             margin: 0 10px; 
             vertical-align: middle;
         }
@@ -106,7 +115,7 @@ position: relative;
   animation-name: Sub-Name;
   animation-duration: 1.5s;
       color: #FFFFFF;
-}
+   }
    
 #nameani {animation-timing-function: ease;}
    @keyframes First-Name {
@@ -130,7 +139,8 @@ position: relative;
   </style>
   </head>
   <body>
-    
+  
+   
     <video autoplay muted loop id="vid">
   <source src="Ghibli_Ani_Test_720p.mp4" type="video/mp4">
 </video>
@@ -143,7 +153,7 @@ position: relative;
             <li><a href="contact.html">Contact</a></li>
           </ul>
       </div>
-    
+
     <nameani id="nameani">EMERSON</nameani>
     <lastnameani id="lastnameani">SANCHEZ</lastnameani>
      <subheadingani id="subheadingani">Digital Artist</subheadingani>
