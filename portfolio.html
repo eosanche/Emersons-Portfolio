@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<!-- Emerson -->
+<!-- March 14 2025 -->
+<html lang="en">
+  <meta charset="UTF-8">
+<head>  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+<title>Index.html</title>
+  
+ <style>
+   body {
+     background-color: #1E2121;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+     position: relative;
+   }
+
+   .vid-container {
+     position: relative;
+     width: 100%;
+     height: 80vh;
+     display: flex;
+     justify-content: center;
+     margin-top: 200px;
+     overflow: hidden;
+   }
+   
+   
+   #vid {
+  position: absolute;
+  width: 100%; 
+}
+   
+   /*nav bar*/
+   #nav {
+        font-size: 1em;
+     font-family: "Poppins", sans-serif;
+        padding: 5px;
+     margin-top: 40px;
+        clear: both;
+        float: none;
+        width: 100%;
+        position: absolute;
+     display: flex;
+     justify-content: center;
+   }
+   
+   /*code for nav list*/
+        #nav li {
+        list-style: none;
+        display: inline;    
+      }
+   
+        #nav ul {
+        padding: 5px;
+          float: right;
+          display: flex;
+          gap: 20px;
+          
+      }
+
+      #nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 10px;
+        
+        
+      }
+
+      #nav a:hover {
+        color: #aeaca8;
+      }
+   
+    #nav a:clicked {
+        color: #aeaca8;
+      }
+   
+      .navlinedivide {
+            display: inline-block;
+        height: 15px;
+        width: 2px;
+        border-radius: 50px;
+            background-color: #FFFFFF; 
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+   
+   /*text animation*/
+   
+   
+   .text-animation-box {
+     position: absolute;
+     margin-top: 60%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     padding: 5px;
+   }
+   
+   nameani {
+     display: block;
+  position: relative;
+         font-size: 55px;
+     font-family: "Poppins", sans-serif;
+       font-weight: 600;
+     letter-spacing: 5px;
+  animation-name: First-Name;
+  animation-duration: 1s;
+     color: #FFFFFF;
+}
+   
+      lastnameani {
+         display: block;
+ position: relative;
+         font-size: 55px;
+     font-family: "Poppins", sans-serif;
+       font-weight: 600;
+     letter-spacing: 5px;
+  animation-name: Last-Name;
+  animation-duration: 1.5s;
+         color: #FFFFFF;
+}
+   
+   subheadingani {
+      display: block;
+position: relative;
+         font-size: 20px;
+     font-family: "Poppins", sans-serif;
+       font-weight: 300;
+     letter-spacing: 5px;
+  animation-name: Sub-Name;
+  animation-duration: 1.5s;
+      color: #FFFFFF;
+   }
+   
+#nameani {animation-timing-function: ease;}
+   @keyframes First-Name {
+  0%   {opacity: 0; top: 50px;}
+  100% {top: 0px;}
+}
+   
+   
+   /* copy .hmtl on nav bar to the current stuff on this page*/
+  </style>
+  </head>
+  <body>
+  
+    
+    <div id="nav">
+       <ul>
+            <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
+            <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
+            <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+<div class="text-animation-box">
+    <nameani id="nameani">PORTFOLIO</nameani>
+   </div>
+  </body>
+</html>
