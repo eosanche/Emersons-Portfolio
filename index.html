@@ -220,11 +220,21 @@ position: relative;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-  top: 350px;
+  top: 450px;
   text-align: left;
-             width: 100%;
-     padding: 5px;
+width: 100%;
+padding: 5px;
+        left: 350px;
 }
+   
+      headingcontentani {
+         font-size: 20px;
+     font-family: "Poppins", sans-serif;
+       font-weight: 300;
+  animation-name: head-Name;
+  animation-duration: 1.9s;
+      color: #FFFFFF;
+   }
    
    h1 {
     padding: 20px;
@@ -268,6 +278,13 @@ position: relative;
   0%   {opacity: 0; top: 50px;}
   100% {top: 0px;}
 }
+   
+         #headingcontentani {animation-timing-function: ease-in-out;}
+     @keyframes head-Name {
+  0%   {opacity: 0; top: 0p;}
+  100% {top: 0px;}
+}
+   
    
    /* copy .hmtl on nav bar to the current stuff on this page*/
   </style>
@@ -313,8 +330,8 @@ position: relative;
    </div>
     
     <div class="headingcontent">
-
-      <h1> "Design should be expressive, it represents what it truly means to be creative." </h1>
+  <headingcontentani id="headingcontentani">
+      <h1> "Design should be expressive, it represents what it truly means to be creative." </h1></headingcontentani>
        </div>
     
   </body>
