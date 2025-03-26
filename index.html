@@ -21,19 +21,24 @@
    }
 
    .vid-container {
-     position: relative;
+        position: absolute; 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
      width: 100%;
      height: 80vh;
-     display: flex;
-     justify-content: center;
-     margin-top: 200px;
      overflow: hidden;
+     top: 30px;
    }
    
    
    #vid {
   position: absolute;
-  width: 100%; 
+width: 100%;
+  height: 50%;
+  object-fit: cover;
+         object-position: bottom;
 }
    
     #image-container1 {
@@ -49,33 +54,6 @@
     color: #aeaca8;
     }
    
-       #image-container2 {
-      width: 70%;
-      clear: both;
-     position: absolute; 
-        justify-content: center;
-     display: flex;
-      top: 1500px;
-   }
-      
-   #image-container2:hover {
-    color: #aeaca8;
-    }
-   
-          #image-container3 {
-      width: 70%;
-      clear: both;
-     position: absolute; 
-        justify-content: center;
-     display: flex;
-      top: 2150px;
-   }
-      
-   #image-container3:hover {
-    color: #aeaca8;
-    }
-   
-   
     #image-background {
       width: auto;
       height: auto;
@@ -84,25 +62,9 @@
         justify-content: center;
     }
    
-   
-      #image-background2 {
-      width: auto;
-      height: auto;
-      display: inline;
-      position: relative;
-        justify-content: center;
-    }
-   
-       #image-background3 {
-      width: auto;
-      height: auto;
-      display: inline;
-      position: relative;
-        justify-content: center;
-    }
        .image-size {
          width: 80%;
-  height: 90%;
+  height: 20%;
   object-fit: cover;
     }
    
@@ -215,8 +177,8 @@ position: relative;
    }
    
       .headingcontent {
-        display: flex;
-           position: absolute; 
+     position: absolute; 
+     display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
@@ -224,10 +186,11 @@ position: relative;
   text-align: left;
 width: 100%;
 padding: 5px;
-        left: 350px;
 }
    
       headingcontentani {
+             display: flex;
+position: relative;
          font-size: 20px;
      font-family: "Poppins", sans-serif;
        font-weight: 300;
@@ -291,25 +254,17 @@ padding: 5px;
   </head>
   <body>
   
-    <!--
+ 
    <div class="vid-container">
     <video autoplay muted loop id="vid">
-  <source src="Ghibli_Ani_Test_720p.mp4" type="video/mp4">
+  <source src="In_Good_Spirits720hd.mp4" type="video/mp4">
 </video>
      </div>
--->
+
      <div id="image-container1">
       <div id="image-background">
-           <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="imagelarge-size">         
-      </div>
-    </div>
-       <div id="image-container2">
-          <div id="image-background2">
+           <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size">         
         <img src="folgers_Final_logo_1-03.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size">
-         </div>
-       </div>
-         <div id="image-container3">
-            <div id="image-background3">
           <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size">
           
          </div>
