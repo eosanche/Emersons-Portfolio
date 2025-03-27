@@ -23,6 +23,27 @@
 
 /* video code */
       
+      .vid-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+        top: 10px;
+
+      }
+
+      #vid {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        object-position: bottom;
+        top: 60px;
+      }
       
     /* All images containers and hover states */
 
@@ -249,6 +270,34 @@
         text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
       }
 
+      lastnameani {
+        display: flex;
+        position: relative;
+        bottom: 140px;
+        font-size: 160px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        animation-name: Last-Name;
+        animation-duration: 1.5s;
+        color: #FFF9F0;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+      }
+
+      subheadingani {
+        display: flex;
+        position: relative;
+        bottom: 180px;
+        font-size: 60px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        animation-name: Sub-Name;
+        animation-duration: 1.5s;
+        color: #1E2121;
+        text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+      }
 
 /* header quote container */
       
@@ -428,6 +477,27 @@
   <body>
 
 
+    <div class="vid-container">
+      <video autoplay muted loop id="vid">
+        <source src="In_Good_Spirits720hd.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id="image-container1">
+      <a href="portfolio.html">
+      <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size1">
+      </a>
+    </div>
+
+    <div id="image-container2">
+      <img src="folgers_Final_logo_1-03.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size2">
+    </div>
+
+    <div id="image-container3">
+      <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
+      
+    </div>
+
     <div id="nav">
       <ul>
         <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
@@ -437,14 +507,20 @@
       </ul>
     </div>
 
- 
+    <h1>
+      Featured Works.
+      <hr>
+    </h1>
+    
     <div class="headingcontent">
       <headingcontentani id="headingcontentani">
-        <span class="decor-underlineheading ">Email</span> </headingcontentani>
+        "Design should be expressive, it represents what it truly means to be <span class="decor-underlineheading ">creative."</span> </headingcontentani>
     </div>
 
     <div class="text-animation-box">
-      <nameani id="nameani">CONTACT</nameani>
+      <nameani id="nameani">EMERSON</nameani>
+      <lastnameani id="lastnameani">SANCHEZ</lastnameani>
+      <subheadingani id="subheadingani">DIGITAL ARTIST</subheadingani>
     </div>
 
 
