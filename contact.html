@@ -2,74 +2,199 @@
 <!-- Emerson -->
 <!-- March 14 2025 -->
 <html lang="en">
-<head>  
+  <head>
     <meta charset="UTF-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
-  <title>index.html</title>
-  
- <style>
-   body {
-     background-color: #1E2121;
-       display: flex;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>index.html</title>
+
+    <style>
+      body {
+        background-color: #1E2121;
+        display: flex;
         justify-content: center;
         align-items: center;
-     position: relative;
-          padding: 20px 0px;
-   }
-   
-    #image-container1 {
-      width: 70%;
-      clear: both;
-     position: absolute; 
-     display: flex;
-      top: 300px;
-   }
+        position: relative;
+        padding: 20px;
+          overflow-x: hidden;
+      }
+
+/* video code */
       
-    #image-background {
-      width: auto;
-      height: 500px;
-      display: inline;
-      position: relative;
-      float: left;
-    }
-   
-   .imgcrop {
-       width: 550px;
-  height: 600px;
-  object-fit: cover;
-     border-radius: 5px;
-   }
+      
+    /* All images containers and hover states */
 
+      #image-container1 {
+        background-color: transparent;
+        width: 90%;
+        height: 800px;
+        clear: both;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 1660px;
+             opacity: 0.1;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+      }
 
-     /*nav bar*/
-   #nav {
+      #image-container1::after {
+        content: "Layout Design";
+        font-size: 80px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        width: 100%;
+        color: #FFF9F0;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      #image-container1:hover {
+        opacity: 1;
+        transform: scale(1.01);
+      }
+
+      #image-container1:hover::after {
+        opacity: 1;
+      }
+
+      .image-size1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      #image-container2 {
+        color: transparent;
+        width: 90%;
+        height: 800px;
+        clear: both;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 2560px;
+        opacity: 0.1;
+        overflow: hidden;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+      }
+
+          #image-container2::after {
+        content: "Rebranding";
+        font-size: 80px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        width: 100%;
+        color: #1E2121;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      #image-container2:hover {
+        color: #000000;
+        opacity: 1;
+        transform: scale(1.01);
+      }
+      
+          #image-container2:hover::after {
+        opacity: 1;
+      }
+
+      .image-size2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #image-container3 {
+        color: transparent;
+        width: 90%;
+        height: 800px;
+        clear: both;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 3460px;
+        opacity: 0.1;
+        overflow: hidden;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+      }
+
+     #image-container3::after {
+        content: "3D Design";
+        font-size: 80px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        width: 100%;
+        color: #FFF9F0;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+ 
+      #image-container3:hover {
+        color: #000000;
+        opacity: 1;
+        transform: scale(1.01);
+      }
+
+            #image-container3:hover::after {
+        opacity: 1;
+      }
+      
+      .image-size3 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /*nav bar*/
+      #nav {
         font-size: 1em;
-     font-family: "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         padding: 5px;
-     margin: 5px;
+        margin: 5px;
         clear: both;
         float: none;
         width: 100%;
         position: relative;
-     display: flex;
-     justify-content: center;
-     bottom: 30px;
-   }
-   
-   /*code for nav list*/
-        #nav li {
-        list-style: none;
-        display: inline;    
+        display: flex;
+        justify-content: center;
+        bottom: 30px;
       }
-   
-        #nav ul {
+
+      /*code for nav list*/
+      #nav li {
+        list-style: none;
+        display: inline;
+      }
+
+      #nav ul {
         padding: 5px;
-          float: right;
-          display: flex;
-          
+        float: right;
+        display: flex;
+
       }
 
       #nav a {
@@ -81,136 +206,248 @@
       #nav a:hover {
         color: #aeaca8;
       }
-   
-    #nav a:active {
-        color: #aeaca8;
+
+      #nav a:active {
+        color: #262626;
       }
-   
+
       .navlinedivide {
-            display: inline-block;
+        display: inline-block;
         height: 15px;
         width: 2px;
         border-radius: 50px;
-            background-color: #FFFFFF; 
-            vertical-align: middle;
-        }
-   
-   /*text animation*/
-   
-   
-   .text-animation-box {
-     position: absolute; 
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     width: 100%;
-     padding: 5px;
-     top: 90%;
-   }
-   
-   nameani {
-     display: flex;
-  position: relative;
-         font-size: 55px;
-     font-family: "Poppins", sans-serif;
-       font-weight: 600;
-     letter-spacing: 5px;
-  animation-name: First-Name;
-  animation-duration: 1s;
-     color: #FFFFFF;
-}
-   
-   
+        background-color: #FFFFFF;
+        vertical-align: middle;
+      }
+
+      /* text animations */
+
+
+      .text-animation-box {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 40px;
+        top: 160%;
+        overflow: hidden;
+      }
+
+      nameani {
+        display: flex;
+        position: relative;
+        font-size: 160px;
+        bottom: 70px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        animation-name: First-Name;
+        animation-duration: 1s;
+        color: #FFF9F0;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      }
+
+
+/* header quote container */
+      
       .headingcontent {
+        position: absolute;
         display: flex;
-           position: absolute; 
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-  top: 350px;
-  text-align: left;
-             width: 100%;
-     padding: 5px;
-}
-   
-         .paragraphcontent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 750px;
+        text-align: left;
+        width: 100%;
+        padding: 5px;
+      }
+
+/* Underline text animation */
+      
+      .decor-underlineheading {
+        position: relative;
+        text-align: center;
+      }
+
+
+      .decor-underlineheading::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 90px;
+        overflow: hidden;
+        animation: lineani 3s forwards;
+      }
+
+      @keyframes lineani {
+        0% {
+          width: 0%;
+        }
+
+        55% {
+          width: 0%;
+        }
+
+        100% {
+          width: 50%;
+        }
+      }
+      
+/* header quote animation */
+      
+      headingcontentani {
+        display: inline-block;
+        position: relative;
+        font-size: 55px;
+        width: 45%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        text-align: left;
+        animation-name: head-Name;
+        animation-duration: 2.4s;
+        color: #FFFFFF;
+        font-style: italic;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 3px;
+        padding: 100px;
+
+      }
+
+/* header and paragraph containers */
+      
+      h1 {
+        padding: 20px;
+        font-size: 105px;
         display: flex;
-           position: absolute; 
-     flex-direction: column;
-  top: 220px;
-  text-align: left;
-             width: 50%;
-     padding: 5px;
+            flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 45%;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: #FFFFFF;
+        top: 1300px;
+      }
+      
+      hr {
+    width: 100%;
+    margin-top: -10px;
 }
-   
-   h1 {
-    padding: 20px;
-         font-size: 55px;
-          display: flex;
-     position: relative;
-     width: 45%;
-     text-align: left;
-     font-family: "Poppins", sans-serif;
-       font-weight: 300;
-      color: #FFFFFF;
-   }
-   
-         p {
-      padding: 15px;
-           margin: 5px;
-         font-size: 20px;
-                 display: flex;
-     position: relative;
-           text-align: left;
-     font-family: "Poppins", sans-serif;
-       font-weight: 300;
-      color: #FFFFFF;
-           left: 300px;
-    }
-   
-#nameani {animation-timing-function: ease;}
-   @keyframes First-Name {
-  0%   {opacity: 0; top: 50px;}
-  100% {top: 0px;}
-}
-   
-   /* copy .hmtl on nav bar to the current stuff on this page*/
-  </style>
+
+      p {
+        padding: 20px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        margin-left: 500px;
+      }
+      
+/* keyframe animations */
+      
+      #nameani {
+        animation-timing-function: ease;
+      }
+
+      @keyframes First-Name {
+        0% {
+          opacity: 0;
+          bottom: 30px;
+        }
+
+        100% {
+          bottom: 70px;
+        }
+      }
+
+      #lastnameani {
+        animation-timing-function: ease;
+      }
+
+      @keyframes Last-Name {
+        0% {
+          opacity: 0;
+          bottom: 90px;
+        }
+
+        100% {
+          bottom: 140px;
+        }
+      }
+
+      #subheadingani {
+        animation-timing-function: ease;
+      }
+
+      @keyframes Sub-Name {
+        0% {
+          opacity: 0;
+          bottom: 120px;
+        }
+
+        100% {
+          bottom: 180px;
+        }
+      }
+
+      #headingcontentani {
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes head-Name {
+
+        0% {
+          opacity: 0;
+          top: 0px;
+        }
+
+        50% {
+          opacity: 0;
+          top: 0px;
+        }
+
+        100% {
+          opacity: 1;
+          top: 0px;
+        }
+      }
+
+    </style>
   </head>
   <body>
-  
+
+
     <div id="nav">
-       <ul>
-            <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
-            <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
-            <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <ul>
+        <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
+        <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
+        <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-<div class="text-animation-box">
-    <nameani id="nameani">CONTACT ME.</nameani>
-   </div>
-    
-    
-    
-        <div id="image-container1">
-      <div id="image-background">
-          <img class="imgcrop" src="6D1A6458-min.JPG" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves.">
-             
-      </div>
+
+ 
+    <div class="headingcontent">
+      <headingcontentani id="headingcontentani">
+        <span class="decor-underlineheading ">Email</span> </headingcontentani>
     </div>
-    
-    <div class="paragraphcontent">
 
-  <p> I'm Emerson Sanchez, a digital artist exploring all fields of design.   </p> <br>
+    <div class="text-animation-box">
+      <nameani id="nameani">CONTACT</nameani>
+    </div>
 
-  <p> I have around three years of experience in graphic design, layout design, and 3D design including my current experiences at the Global Business and Digital Arts program at the University of Waterloo. The program strongly emphasizes UI/UX design, leaving only a bit of space for other design fields. However, this restriction did not stop me from specializing in various design fields. With strong collaboration skills and adaptability, I can design in any environment bringing new solutions to any challenge. </p> <br>
 
-<p> In my free time, you can find me glued to my computer finding new design techniques and experimenting with creative ideas.
-</p>
-       </div> 
-    
+
   </body>
 </html>
-
