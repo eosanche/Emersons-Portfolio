@@ -310,13 +310,14 @@ position: relative;
        font-weight: 300;
          text-align: left;
   animation-name: head-Name;
-  animation-duration: 1.9s;
+  animation-duration: 3.9s;
       color: #FFFFFF;
         font-style: italic;
         border-style: solid;
         border-color: #FFFFFF;
         border-width: 3px;
         padding: 100px;
+                     animation-delay: 1.5s;
    }
    
    h1 {
@@ -344,28 +345,38 @@ position: relative;
       margin-left: 500px;
     }
    
-#nameani {animation-timing-function: ease;}
+#nameani {
+  animation-timing-function: ease;
+   }
    @keyframes First-Name {
-  0%   {opacity: 0; bottom: -50px;}
+  0%   {opacity: 0; bottom: 30px;}
   100% {bottom: 70px;}
 }
    
-   #lastnameani {animation-timing-function: ease;}
+   #lastnameani {
+     animation-timing-function: ease;
+   }
      @keyframes Last-Name {
-  0%   {opacity: 0; bottom: -50px;}
+  0%   {opacity: 0; bottom: 90px;}
   100% {bottom: 140px;}
 }
    
-      #subheadingani {animation-timing-function: ease;}
+      #subheadingani {
+        animation-timing-function: ease;
+   }
      @keyframes Sub-Name {
-  0%   {opacity: 0; bottom: -50px;}
+  0%   {opacity: 0; bottom: 120px;}
   100% {bottom: 180px;}
 }
    
-         #headingcontentani {animation-timing-function: ease-in-out;}
+         #headingcontentani {
+           animation-timing-function: ease-in-out;
+   }
      @keyframes head-Name {
-  0%   {opacity: 0; top: 0p;}
-  100% {top: 0px;}
+       
+  0%   {opacity: 0; top: 0px;}
+    50%   {opacity: 0; top: 0px;}    
+  100% {opacity: 1; top: 0px;}
 }
    
    
