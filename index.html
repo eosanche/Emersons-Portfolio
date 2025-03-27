@@ -191,25 +191,63 @@
         object-fit: cover;
       }
       
+    /*contact info footer */
+      
       .contact-info-bar {
   position: absolute;
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: center;
         justify-content: center;
-        text-align: left;
+        text-align: center;
         width: 100%;
            height: 10%;
         padding: 45px;
-        margin-left: 20px;
            background-color: #151616;
             font-family: "Poppins", sans-serif;
            font-size: 15px;
         font-weight: 300;
         color: #FFFFFF;
         top: 4880px;
-           border-radius: 5px;
 }
+      
+           .contact-info-bar   li {
+           list-style: none;
+        display: inline;
+              padding: 20px;
+      }
+      
+    .contact-info-bar  a{
+        color: #FFFFFF;
+           text-decoration: none;
+        padding: 10px;
+      }
+      
+      
+            .info-bar-copyright {
+  position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+           height: 2%;
+        padding: 15px;
+           background-color: #0E0E0E;
+            font-family: "Poppins", sans-serif;
+           font-size: 15px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 393vh;
+}
+      
+           .info-bar-copyright   li {
+           list-style: none;
+        display: inline;
+      }
+      
+      /* Button leading to Portfolio */
       
          .porfoliobutton {
         position: absolute;
@@ -299,6 +337,8 @@
         vertical-align: middle;
       }
 
+
+      
       /* text animations */
 
 
@@ -583,13 +623,27 @@ text-align: center;
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-
+ 
+    
     <h1>
       Featured Works.
       <hr>
     </h1>
     
-    <div class="contact-info-bar"> Instagram <br> ©2025 Emerson Sanchez </div>
+
+<div class="contact-info-bar">
+        <ul>
+        <li>Social(s):<a href=""><u>Instagram</u></a></li>
+        <li>Email: sanchez.o.emerson@gmail.com</li>
+        <li>Tel: 905-781-0185</li>
+      </ul>
+    </div>
+    
+    <div class="info-bar-copyright">
+      <ul>
+      <li>©2025 Emerson Sanchez</li>
+        </ul>
+    </div>
     
      <h2>
       See More Projects <br> 
