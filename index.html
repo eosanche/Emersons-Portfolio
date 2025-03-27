@@ -53,18 +53,39 @@ width: 100%;
             display: flex;
        flex-direction: column;
       align-items: center;
-      top: 1460px;
+      top: 1260px;
         opacity: 0.5;
        border-radius: 20px;
               overflow: hidden;
        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
    }
       
+      #image-container1::after {
+  content: "Written In The Stars"; 
+         font-size: 80px;
+     font-family: "Poppins", sans-serif;
+       font-weight: 400;
+          font-style: italic;
+        width: 100%;
+  color: #FFF9F0;
+  position: absolute;
+     justify-content: center;
+            display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+   
    #image-container1:hover {
     color: #000000;
        opacity: 1;
-     transform: scale(1.03);
+     transform: scale(1.01);
     }
+   
+
+
+#image-container1:hover::after {
+  opacity: 1;
+}
    
         .image-size1 {
          width: 100%;
@@ -82,7 +103,7 @@ width: 100%;
             display: flex;
        flex-direction: column;
       align-items: center;
-      top: 2360px;
+      top: 2160px;
         opacity: 0.1;
 background-color: red;
           overflow: hidden;
@@ -93,7 +114,7 @@ background-color: red;
    #image-container2:hover {
     color: #000000;
        opacity: 1;
-       transform: scale(1.03);
+       transform: scale(1.01);
     }
    
        .image-size2 {
@@ -112,7 +133,7 @@ background-color: red;
             display: flex;
        flex-direction: column;
       align-items: center;
-      top: 3260px;
+      top: 3060px;
         opacity: 0.1;
            background-color: yellow;
                    overflow: hidden;
@@ -123,7 +144,7 @@ background-color: red;
    #image-container3:hover {
     color: #000000;
        opacity: 1;
-       transform: scale(1.03);
+       transform: scale(1.01);
     }
    
        .image-size3 {
