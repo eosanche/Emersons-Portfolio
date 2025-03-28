@@ -552,15 +552,51 @@
         top: 1300px;
       }
 
-      hr {
-        width: 50%;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        margin-top: 150px;
-        height: 3px;
-        background-color: white;
-      }
+     .decor-underlineheading2 {
+    position: relative;
+    text-align: center;
+    display: inline-block; 
+       animation: glow-text 5s infinite ease-in-out;
+}
+
+.decor-underlineheading2::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: -10px; 
+    animation: lineani2 5s infinite ease;
+}
+      
+@keyframes glow-text {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    }
+    20% {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    }
+}
+      
+@keyframes lineani2 {
+    0% {
+        width: 0%;
+       left: 0%;
+    }
+    50% {
+        width: 100%;
+        left: 0%;
+    }
+    100% {
+        width: 0%;
+       left: 100%;
+    }
+}
+
 
       h2 {
         padding: 20px;
@@ -679,8 +715,9 @@
     </div>
 
     <div id="image-container3">
+      <a href="3DDesign.html">
       <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
-
+</a>
     </div>
 
     <div id="nav">
@@ -691,13 +728,15 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-
+    
+    <div class="headingcontent">
+      <headingcontentani id="headingcontentani">
+        "Design should be expressive, it represents what it truly means to be <span class="decor-underlineheading ">creative."</span> </headingcontentani>
+    </div>
 
     <h1>
-      Featured Works.
-      <hr>
+      <span class="decor-underlineheading2"> Featured Works. </span>
     </h1>
-
 
     <div class="contact-info-bar">
       <ul>
@@ -720,10 +759,6 @@
 
     <div class="porfoliobutton"> <a href="portfolio.html"> Over Here! → </a></div>
 
-    <div class="headingcontent">
-      <headingcontentani id="headingcontentani">
-        "Design should be expressive, it represents what it truly means to be <span class="decor-underlineheading ">creative."</span> </headingcontentani>
-    </div>
 
     <div class="text-animation-box">
       <nameani id="nameani">EMERSON</nameani>
