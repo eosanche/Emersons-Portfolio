@@ -27,7 +27,8 @@
       clear: both;
      position: absolute; 
      display: flex;
-      top: 300px;
+      top: 330px;
+      
    }
       
     #image-background {
@@ -36,12 +37,55 @@
       display: inline;
       position: absolute;
       float: left;
+   
     }
    
    .imgcrop {
        width: 550px;
   height: 600px;
   object-fit: cover;
+        border-radius: 50px;
+   }
+      
+          #image-container2 {
+      width: 85%;
+            right: 100px;
+      clear: both;
+     position: absolute; 
+     display: flex;
+      top: 90px;
+      background-color: red;
+   }
+      
+    #image-background2 {
+      width: 40%;
+      height: auto;
+      display: inline;
+      position: absolute;
+      float: none;
+        transform: scaleX(-1);
+        animation: rotateani 2s infinite steps(1, end);
+}
+
+@keyframes rotateani {
+  0% {
+    transform: rotate(0deg) scaleX(-1); 
+  }
+  25% {
+    transform: rotate(10deg) scaleX(-1); 
+  }
+ 100% {
+    transform: rotate(-10deg) scaleX(-1); 
+  }
+    }
+      
+      
+   
+   .imgcrop2 {
+       width: 100%;
+  height: 100%;
+  object-fit: cover;
+        border-radius: 50px;
    }
 
       /*nav bar*/
@@ -111,16 +155,51 @@
     nameani {
         display: flex;
         position: relative;
-        font-size: 160px;
-        bottom: 70px;
+        font-size: 130px;
+        bottom: 20px;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         letter-spacing: 3px;
         animation-name: First-Name;
-        animation-duration: 1s;
+        animation-duration: 0.6s;
         color: #FFF9F0;
         text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
       }
+      
+      
+     .decor-underlineheading2 {
+    position: relative;
+    text-align: center;
+    display: inline-block; 
+}
+
+.decor-underlineheading2::after {
+  bottom: 30px;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    animation: lineani2 0.7s ease-in-out 3;
+   animation-delay: 0s;
+}
+      
+@keyframes lineani2 {
+    0% {
+        width: 0%;
+       left: 0%;
+    }
+
+    50% {
+        width: 100%;
+        left: 0%;
+    }
+    100% {
+        width: 0%;
+       left: 100%;
+    }
+}
    
    
       .headingcontent {
@@ -139,7 +218,7 @@
         display: flex;
            position: absolute; 
      flex-direction: column;
-  top: 220px;
+  top: 270px;
   text-align: left;
              width: 50%;
      padding: 5px;
@@ -160,7 +239,7 @@
          p {
       padding: 15px;
            margin: 5px;
-         font-size: 20px;
+         font-size: 25px;
                  display: flex;
      position: relative;
            text-align: left;
@@ -173,9 +252,9 @@
 #nameani {animation-timing-function: ease;}
    @keyframes First-Name {
   0%   {opacity: 0; bottom: -50px;}
-  100% {bottom: 70px;}
+  100% {bottom: 20px;}
 }
-   
+  
    /* copy .hmtl on nav bar to the current stuff on this page*/
   </style>
   </head>
@@ -190,15 +269,20 @@
           </ul>
     </div>
 <div class="text-animation-box">
-    <nameani id="nameani">ABOUT ME</nameani>
+  <nameani id="nameani">      <span class="decor-underlineheading2">ABOUT ME</span></nameani>
    </div>
     
     
     
         <div id="image-container1">
       <div id="image-background">
-          <img class="imgcrop" src="6D1A6458-min.JPG" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves.">
-             
+          <img class="imgcrop" src="6D1A6458-min.JPG" alt="Profile Picture of a young male Filipino taken from the shoulders up">
+      </div>
+    </div>
+    
+     <div id="image-container2">
+      <div id="image-background2">
+          <img class="imgcrop2" src="2901H1-01.png" alt="A robotic sci-fi mask">
       </div>
     </div>
     
