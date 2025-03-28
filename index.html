@@ -267,6 +267,7 @@
         top: 4580px;
            border-radius: 5px;
            
+           
       }
       
       .porfoliobutton a {
@@ -282,10 +283,26 @@
   height: 100%;
 
 }
+.porfoliobutton::after {
+        width: 100%;
+        color: #FFF9F0;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        opacity: 0;
+       transition: transform 0.3s ease;
+      }
 
 .porfoliobutton a:hover {
   color: #aeaca8; 
+  transform: scale(1.1); 
+
 }
+      
+           .porfoliobutton:hover::after {
+        opacity: 1;
+      }
+      
       /*nav bar*/
       #nav {
         font-size: 1em;
@@ -633,7 +650,7 @@ text-align: center;
 
 <div class="contact-info-bar">
         <ul>
-        <li>Social(s):<a href=""><u>Instagram</u></a></li>
+        <li>Social(s):<a href="https://www.instagram.com/emiwhem/?igsh=MWQ5dzU2bjNnZ3lrNA%3D%3D#"><u>Instagram</u></a></li>
         <li>Email: sanchez.o.emerson@gmail.com</li>
         <li>Tel: 905-781-0185</li>
       </ul>
@@ -644,7 +661,7 @@ text-align: center;
       <li>©2025 Emerson Sanchez</li>
         </ul>
     </div>
-    
+   
      <h2>
       See More Projects <br> 
         in my Portfolio!
