@@ -67,15 +67,28 @@
         overflow: hidden;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-
+     #image-container1:before {
+    content: "Written In The Stars";
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-style: italic;
+     color: #FFF9F0;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
       #image-container1::after {
-        content: "Layout Design";
-        font-size: 80px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-style: italic;
+        content: "LAYOUT DESIGN";
+        font-size: 40px;
+        font-family: "Figtree", sans-serif;
+        font-weight: 400;
         width: 100%;
         color: #FFF9F0;
+           bottom: 45%;
         position: absolute;
         justify-content: center;
         display: flex;
@@ -88,7 +101,7 @@
         transform: scale(1.01);
       }
 
-      #image-container1:hover::after {
+      #image-container1:hover::before, #image-container1:hover::after {
         opacity: 1;
       }
 
@@ -114,13 +127,25 @@
         border-radius: 20px;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-
+#image-container2::before {
+    content: "Folgers";
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-style: italic;
+     color: #1E2121;
+    position: absolute;
+    top: 32%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
       #image-container2::after {
-        content: "Rebranding";
-        font-size: 80px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-style: italic;
+        content: "REBRANDING & PRODUCT DESIGN";
+      font-size: 40px;
+        font-family: "Figtree", sans-serif;
+        font-weight: 400;
         width: 100%;
         color: #1E2121;
         position: absolute;
@@ -136,7 +161,7 @@
         transform: scale(1.01);
       }
 
-      #image-container2:hover::after {
+      #image-container2:hover::before, #image-container2:hover::after {
         opacity: 1;
       }
 
@@ -182,7 +207,7 @@
         content: "3D DESIGN";
         font-size: 40px;
         font-family: "Figtree", sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         width: 100%;
         color: #FFF9F0;
            bottom: 45%;
@@ -255,7 +280,7 @@
         padding: 15px;
         background-color: #0E0E0E;
         font-family: "Poppins", sans-serif;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 300;
         color: #FFFFFF;
         top: 381vh;
@@ -684,7 +709,7 @@
 
     <div class="info-bar-copyright">
       <ul>
-        <li>©2025 Emerson Sanchez</li>
+        <li>©2025 Emerson Sanchez. Powered by 5 double cheeseburgers</li>
       </ul>
     </div>
 
