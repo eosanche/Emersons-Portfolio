@@ -18,72 +18,188 @@
         align-items: center;
         position: relative;
         padding: 20px;
-         overflow-x: hidden;
-            overflow-y: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
       }
-      
-#image-container1 {
-  width: 70%;
-  max-width: 550px; 
-  position: relative; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto; 
-  top: 330px;
-  right: 350px;
-}
-#image-background {
-  width: auto;
-  height: 500px;
-  display: inline;
-  position: relative;
-  float: left;
-}
-   
-   .imgcrop {
-       width: 550px;
-  height: 600px;
-  object-fit: cover;
-   }
-      
-#image-container2 {
-  width: 40%;
-  max-width: 180px; 
-  position: absolute;
-  top: 800px; 
-  margin-right: 90px;
-}
-      
-#image-background2 {
-  width: 100%;
-  height: auto;
-  animation: rotateani 2s infinite steps(1, end);
 
-}
+      #image-container1 {
+        width: 70%;
+        max-width: 550px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        top: 330px;
+        right: 350px;
+      }
 
-@keyframes rotateani {
-  0% {
-    transform: rotate(2deg) 
-  }
-  25% {
-    transform: rotate(-20deg)  
-  }
-  
-   50% {
-    transform: rotate(2deg) 
-  }
-  
-  75% {
-    transform: rotate(-20deg); 
-  }
-    }
-   
-   .imgcrop2 {
-       width: 100%;
-  height: 100%;
-  object-fit: cover;
-   }
+      #image-background {
+        width: auto;
+        height: 500px;
+        display: inline;
+        position: relative;
+        float: left;
+      }
+
+      .imgcrop {
+        width: 550px;
+        height: 600px;
+        object-fit: cover;
+      }
+
+      #image-container2 {
+        width: 40%;
+        max-width: 180px;
+        position: absolute;
+        top: 750px;
+        margin-right: 250px;
+      }
+
+      #image-background2 {
+        width: 100%;
+        height: auto;
+        animation: rotateani 2s infinite steps(1, end);
+      }
+
+      @keyframes rotateani {
+        0% {
+          transform: rotate(2deg)
+        }
+
+        25% {
+          transform: rotate(-20deg)
+        }
+
+        50% {
+          transform: rotate(2deg)
+        }
+
+        75% {
+          transform: rotate(-20deg);
+        }
+      }
+
+      .imgcrop2 {
+        width: 170%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /*contact info footer */
+
+      .contact-info-bar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        padding: 45px;
+        background-color: #151616;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 1450px;
+      }
+
+      .contact-info-bar li {
+        list-style: none;
+        display: inline;
+        padding: 20px;
+      }
+
+      .contact-info-bar a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+
+      .info-bar-copyright {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 2%;
+        padding: 15px;
+        background-color: #0E0E0E;
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 1550px;
+      }
+
+      /* Button leading to Portfolio */
+
+      .contactbutton {
+        position: absolute;
+        width: 130px;
+        height: 15px;
+        padding: 15px;
+        border: 2px solid white;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #FFFFFF;
+        top: 1350px;
+        bottom: 4460px;
+        transition: 0.5s all ease;
+        border-radius: 5px;
+
+      }
+
+      .contactbutton a {
+        display: flex;
+        color: inherit;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        margin-top: -15px;
+        margin-left: -15px;
+
+      }
+
+
+      .contactbutton:before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 100%;
+        bottom: 0%;
+        opacity: 0;
+        content: "";
+        background-color: #FFFFFF;
+        color: #151616;
+      }
+
+      .contactbutton:hover {
+        color: #151616;
+        transform: scale(1.1);
+      }
+
+
+      .contactbutton:hover:before {
+        transition: 0.5s all ease;
+        left: 0%;
+        right: 0%;
+        opacity: 1;
+        z-index: -1;
+      }
 
       /*nav bar*/
       #nav {
@@ -97,7 +213,7 @@
         position: fixed;
         display: flex;
         justify-content: center;
-       top: 0;
+        top: 0;
       }
 
       /*code for nav list*/
@@ -135,20 +251,21 @@
         background-color: #FFFFFF;
         vertical-align: middle;
       }
-   /*text animation*/
-   
-   
-   .text-animation-box {
-     position: fixed;
-     display: flex;
- text-align: center;
-     justify-content: center;
-     width: 100%;
-     padding: 5px;
-     top: 90px;
-   }
-   
-    nameani {
+
+      /*text animation*/
+
+
+      .text-animation-box {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+        top: 90px;
+      }
+
+      nameani {
         display: flex;
         position: relative;
         font-size: 130px;
@@ -161,136 +278,166 @@
         color: #FFF9F0;
         text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
       }
-      
-      
-     .decor-underlineheading2 {
-    position: relative;
-    text-align: center;
-    display: inline-block; 
-}
 
-.decor-underlineheading2::after {
-  bottom: 30px;
-    content: "";
-    display: block;
-    width: 0%;
-    height: 3px;
-    background-color: #FFFFFF;
-    position: absolute;
-    animation: lineani2 0.7s ease-in-out 3;
-   animation-delay: 0s;
-}
-      
-@keyframes lineani2 {
-    0% {
-        width: 0%;
-       left: 0%;
-    }
 
-    50% {
-        width: 100%;
-        left: 0%;
-    }
-    100% {
+      .decor-underlineheading2 {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+      }
+
+      .decor-underlineheading2::after {
+        bottom: 30px;
+        content: "";
+        display: block;
         width: 0%;
-       left: 100%;
-    }
-}
-   
-   
+        height: 3px;
+        background-color: #FFFFFF;
+        position: absolute;
+        animation: lineani2 0.7s ease-in-out;
+        animation-delay: 0.6s;
+      }
+
+      @keyframes lineani2 {
+        0% {
+          width: 0%;
+          left: 0%;
+        }
+
+        50% {
+          width: 100%;
+          left: 0%;
+        }
+
+        75% {
+          width: 100%;
+          left: 0%;
+        }
+
+        100% {
+          width: 0%;
+          left: 100%;
+        }
+      }
+
       .headingcontent {
         display: flex;
-           position: absolute; 
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-  top: 350px;
-  text-align: left;
-             width: 100%;
-     padding: 5px;
-}
-   
-         .paragraphcontent {
-        display: flex;
-           position: absolute; 
-     flex-direction: column;
-  top: 270px;
-  text-align: left;
-             width: 50%;
-     padding: 5px;
-}
-   
-   h1 {
-    padding: 20px;
-         font-size: 55px;
-          display: flex;
-     position: relative;
-     width: 45%;
-     text-align: left;
-     font-family: "Poppins", sans-serif;
-       font-weight: 300;
-      color: #FFFFFF;
-   }
-   
-         p {
-      padding: 15px;
-           margin: 5px;
-         font-size: 25px;
-                 display: flex;
-     position: relative;
-           text-align: left;
-     font-family: "Poppins", sans-serif;
-       font-weight: 300;
-      color: #FFFFFF;
-           left: 300px;
-    }
-   
-#nameani {animation-timing-function: ease;}
-   @keyframes First-Name {
-  0%   {opacity: 0; bottom: -50px;}
-  100% {bottom: 20px;}
-}
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 350px;
+        text-align: left;
+        width: 100%;
+        padding: 5px;
+      }
 
-  </style>
+      .paragraphcontent {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 270px;
+        text-align: left;
+        width: 50%;
+      }
+
+      h1 {
+        padding: 20px;
+        font-size: 55px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        top: 1200px;
+        color: #FFFFFF;
+      }
+
+      p {
+        padding: 15px;
+        margin: 5px;
+        font-size: 25px;
+        display: flex;
+        position: relative;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        left: 300px;
+      }
+
+      #nameani {
+        animation-timing-function: ease;
+      }
+
+      @keyframes First-Name {
+        0% {
+          opacity: 0;
+          bottom: -50px;
+        }
+
+        100% {
+          bottom: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-  
-    <div id="nav">
-       <ul>
-            <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
-            <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
-            <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+
+
+
+    <div class="text-animation-box">
+      <nameani id="nameani"> <span class="decor-underlineheading2">ABOUT ME</span></nameani>
     </div>
-<div class="text-animation-box">
-  <nameani id="nameani">      <span class="decor-underlineheading2">ABOUT ME</span></nameani>
-   </div>
-    
-    
-    
-        <div id="image-container1">
+
+    <div id="image-container1">
       <div id="image-background">
-          <img class="imgcrop" src="6D1A6458-min.JPG" alt="Profile Picture of a young male Filipino taken from the shoulders up">
+        <img class="imgcrop" src="6D1A6458-min.JPG" alt="Profile Picture of a young male Filipino taken from the shoulders up">
       </div>
     </div>
-    
-     <div id="image-container2">
+
+    <div id="image-container2">
       <div id="image-background2">
-          <img class="imgcrop2" src="2901H1-01.png" alt="A robotic sci-fi mask">
+        <img class="imgcrop2" src="2901H1-01.png" alt="A robotic sci-fi mask">
       </div>
     </div>
-    
+
     <div class="paragraphcontent">
 
-  <p> I'm Emerson Sanchez, a digital artist exploring all fields of design.   </p> <br>
+      <p> I'm Emerson Sanchez, a digital artist exploring all fields of design.  </p> <br>
 
-  <p> I have around three years of experience in graphic design, layout design, and 3D design including my current experiences at the Global Business and Digital Arts program at the University of Waterloo. The program strongly emphasizes UI/UX design, leaving only a bit of space for other design fields. However, this restriction did not stop me from specializing in various design fields. With strong collaboration skills and adaptability, I can design in any environment bringing new solutions to any challenge. </p> <br>
+      <p> I have three years of experience in graphic design, layout design, and 3D design including my current experiences at the Global Business and Digital Arts program at the University of Waterloo. The program strongly emphasizes UI/UX design, leaving only a bit of space for other design fields. However, this restriction did not stop me from specializing in various design fields. With strong collaboration skills and adaptability, I can design in any environment bringing new solutions to any challenge. </p> <br>
 
-<p> In my free time, you can find me glued to my computer finding new design techniques and experimenting with creative ideas.
-</p>
-       </div> 
-    
+      <p> In my free time, you can find me glued to my computer finding new design techniques and experimenting with creative ideas.
+      </p>
+    </div>
+
+    <div class="contactbutton"> <a href="contact.html">
+        Contact Me!</a></div>
+    <div class="contact-info-bar">
+      <ul>
+        <li>Social(s):<a href="https://www.instagram.com/emiwhem/?igsh=MWQ5dzU2bjNnZ3lrNA%3D%3D#"><u>Instagram</u></a></li>
+        <li>Email: sanchez.o.emerson@gmail.com</li>
+        <li>Tel: 905-781-0185</li>
+      </ul>
+    </div>
+
+    <div class="info-bar-copyright">
+      ©2025 Emerson Sanchez. Powered by 5 double cheeseburgers
+    </div>
+
+    <h1>Any Questions?</h1>
+
+    <div id="nav">
+      <ul>
+        <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
+        <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
+        <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </body>
 </html>
-
