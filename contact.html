@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <title>index.html</title>
+    <title>contact.html</title>
 
     <style>
       body {
@@ -18,156 +18,234 @@
         align-items: center;
         position: relative;
         padding: 20px;
-          overflow-x: hidden;
-            overflow-y: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
       }
-
-/* video code */
-      
-      
-    /* All images containers and hover states */
 
       #image-container1 {
-        background-color: transparent;
-        width: 90%;
-        height: 800px;
-        clear: both;
-        position: absolute;
-        justify-content: center;
+        width: 70%;
+        max-width: 550px;
+        position: relative;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        top: 1660px;
-             opacity: 0.1;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        margin: 0 auto;
+        top: 330px;
+        right: 350px;
       }
 
-      #image-container1::after {
-        content: "Layout Design";
-        font-size: 80px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-style: italic;
-        width: 100%;
-        color: #FFF9F0;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
-      #image-container1:hover {
-        opacity: 1;
-        transform: scale(1.01);
+      #image-background {
+        width: auto;
+        height: 500px;
+        display: inline;
+        position: relative;
+        float: left;
       }
 
-      #image-container1:hover::after {
-        opacity: 1;
-      }
-
-      .image-size1 {
-        width: 100%;
-        height: 100%;
+      .imgcrop {
+        width: 550px;
+        height: 600px;
         object-fit: cover;
       }
-  
+
       #image-container2 {
-        color: transparent;
-        width: 90%;
-        height: 800px;
-        clear: both;
+        width: 40%;
+        max-width: 180px;
         position: absolute;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 2560px;
-        opacity: 0.1;
-        overflow: hidden;
-        border-radius: 20px;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        top: 750px;
+        margin-right: 250px;
       }
 
-          #image-container2::after {
-        content: "Rebranding";
-        font-size: 80px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-style: italic;
+      #image-background2 {
         width: 100%;
-        color: #1E2121;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
+        height: auto;
+        animation: rotateani 2s infinite steps(1, end);
       }
 
-      #image-container2:hover {
-        color: #000000;
-        opacity: 1;
-        transform: scale(1.01);
-      }
-      
-          #image-container2:hover::after {
-        opacity: 1;
+      @keyframes rotateani {
+        0% {
+          transform: rotate(2deg)
+        }
+
+        25% {
+          transform: rotate(-20deg)
+        }
+
+        50% {
+          transform: rotate(2deg)
+        }
+
+        75% {
+          transform: rotate(-20deg);
+        }
       }
 
-      .image-size2 {
-        width: 100%;
+      .imgcrop2 {
+        width: 170%;
         height: 100%;
         object-fit: cover;
       }
 
-      #image-container3 {
-        color: transparent;
-        width: 90%;
-        height: 800px;
-        clear: both;
+      /*contact info */
+
+      .contact-info-border {
         position: absolute;
-        justify-content: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 3460px;
-        opacity: 0.1;
-        overflow: hidden;
-        border-radius: 20px;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
-      }
-
-     #image-container3::after {
-        content: "3D Design";
-        font-size: 80px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-style: italic;
-        width: 100%;
-        color: #FFF9F0;
-        position: absolute;
         justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
- 
-      #image-container3:hover {
-        color: #000000;
-        opacity: 1;
-        transform: scale(1.01);
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        font-style: italic;
+        color: #FFFFFF;
+        top: 280px;
+        width: 1200px;
+        height: 1080px;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 3px;
       }
 
-            #image-container3:hover::after {
-        opacity: 1;
+
+      .contact-info-email,
+      .contact-info-Tel,
+      .contact-info-Social {
+        animation: none;
       }
-      
-      .image-size3 {
+
+      .contact-info-email {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        font-style: italic;
+        color: #FFFFFF;
+        top: 120px;
+        width: 800px;
+        height: 200px;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 2px;
+      }
+
+      .contact-info-email li {
+        list-style: none;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .contact-info-email a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      .contact-info-Tel {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        font-style: italic;
+        color: #FFFFFF;
+        top: 420px;
+        width: 800px;
+        height: 200px;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 2px;
+      }
+
+      .contact-info-Tel li {
+        list-style: none;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .contact-info-Tel a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      .contact-info-Social {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        font-style: italic;
+        color: #FFFFFF;
+        top: 720px;
+        width: 800px;
+        height: 200px;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 2px;
+      }
+
+      .contact-info-Social li {
+        list-style: none;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .contact-info-Social a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      .extra-text {
+        font-family: "Figtree", sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      /* copyright bar info */
+
+      .info-bar-copyright {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: 2%;
+        padding: 15px;
+        background-color: #0E0E0E;
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 1415px;
       }
 
       /*nav bar*/
@@ -179,10 +257,10 @@
         clear: both;
         float: none;
         width: 100%;
-        position: relative;
+        position: fixed;
         display: flex;
         justify-content: center;
-        bottom: 30px;
+        top: 0;
       }
 
       /*code for nav list*/
@@ -221,170 +299,103 @@
         vertical-align: middle;
       }
 
-      /* text animations */
+      /*text animation*/
 
 
       .text-animation-box {
         position: absolute;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         justify-content: center;
         width: 100%;
-        padding: 40px;
-        top: 160%;
-        overflow: hidden;
+        padding: 5px;
+        top: 90px;
       }
 
       nameani {
         display: flex;
         position: relative;
-        font-size: 160px;
-        bottom: 70px;
+        font-size: 130px;
+        bottom: 20px;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         letter-spacing: 3px;
         animation-name: First-Name;
-        animation-duration: 1s;
+        animation-duration: 0.6s;
         color: #FFF9F0;
         text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
       }
 
-      lastnameani {
-        display: flex;
-        position: relative;
-        bottom: 140px;
-        font-size: 160px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        letter-spacing: 3px;
-        animation-name: Last-Name;
-        animation-duration: 1.5s;
-        color: #FFF9F0;
-        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 
-      }
-
-      subheadingani {
-        display: flex;
-        position: relative;
-        bottom: 180px;
-        font-size: 60px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        letter-spacing: 2px;
-        animation-name: Sub-Name;
-        animation-duration: 1.5s;
-        color: #1E2121;
-        text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
-      }
-
-/* header quote container */
-      
-      .headingcontent {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        top: 750px;
-        text-align: left;
-        width: 100%;
-        padding: 5px;
-      }
-
-/* Underline text animation */
-      
-      .decor-underlineheading {
+      .decor-underlineheading2 {
         position: relative;
         text-align: center;
+        display: inline-block;
       }
 
-
-      .decor-underlineheading::after {
+      .decor-underlineheading2::after {
+        bottom: 30px;
         content: "";
         display: block;
         width: 0%;
         height: 3px;
         background-color: #FFFFFF;
         position: absolute;
-        top: 90px;
-        overflow: hidden;
-        animation: lineani 3s forwards;
+        animation: lineani2 0.7s ease-in-out;
+        animation-delay: 0.6s;
       }
 
-      @keyframes lineani {
+      @keyframes lineani2 {
         0% {
           width: 0%;
+          left: 0%;
         }
 
-        55% {
-          width: 0%;
+        50% {
+          width: 100%;
+          left: 0%;
+        }
+
+        75% {
+          width: 100%;
+          left: 0%;
         }
 
         100% {
-          width: 50%;
+          width: 0%;
+          left: 100%;
         }
       }
-      
-/* header quote animation */
-      
-      headingcontentani {
-        display: inline-block;
-        position: relative;
-        font-size: 55px;
-        width: 45%;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        text-align: left;
-        animation-name: head-Name;
-        animation-duration: 2.4s;
-        color: #FFFFFF;
-        font-style: italic;
-        border-style: solid;
-        border-color: #FFFFFF;
-        border-width: 3px;
-        padding: 100px;
 
-      }
 
-/* header and paragraph containers */
-      
       h1 {
         padding: 20px;
-        font-size: 105px;
+        font-size: 55px;
         display: flex;
-            flex-direction: column;
-        align-items: center;
         position: absolute;
+        flex-direction: column;
+        align-items: center;
         width: 45%;
         text-align: left;
         font-family: "Poppins", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
+        bottom: 200px;
         color: #FFFFFF;
-        top: 1300px;
       }
-      
-      hr {
-    width: 100%;
-    margin-top: -10px;
-}
 
       p {
-        padding: 20px;
-        font-size: 20px;
+        padding: 15px;
+        margin: 5px;
+        font-size: 25px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        position: relative;
+        text-align: center;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         color: #FFFFFF;
-        margin-left: 500px;
+        left: 300px;
       }
-      
-/* keyframe animations */
-      
+
       #nameani {
         animation-timing-function: ease;
       }
@@ -392,71 +403,41 @@
       @keyframes First-Name {
         0% {
           opacity: 0;
-          bottom: 30px;
+          bottom: -50px;
         }
 
         100% {
-          bottom: 70px;
+          bottom: 20px;
         }
       }
-
-      #lastnameani {
-        animation-timing-function: ease;
-      }
-
-      @keyframes Last-Name {
-        0% {
-          opacity: 0;
-          bottom: 90px;
-        }
-
-        100% {
-          bottom: 140px;
-        }
-      }
-
-      #subheadingani {
-        animation-timing-function: ease;
-      }
-
-      @keyframes Sub-Name {
-        0% {
-          opacity: 0;
-          bottom: 120px;
-        }
-
-        100% {
-          bottom: 180px;
-        }
-      }
-
-      #headingcontentani {
-        animation-timing-function: ease-in-out;
-      }
-
-      @keyframes head-Name {
-
-        0% {
-          opacity: 0;
-          top: 0px;
-        }
-
-        50% {
-          opacity: 0;
-          top: 0px;
-        }
-
-        100% {
-          opacity: 1;
-          top: 0px;
-        }
-      }
-
     </style>
   </head>
   <body>
 
 
+
+    <div class="text-animation-box">
+      <nameani id="nameani"> <span class="decor-underlineheading2">CONTACT.</span></nameani>
+    </div>
+
+    <div class="contact-info-border">
+      <div class="contact-info-email">
+        <li>Email: <span class="extra-text">sanchez.o.emerson@gmail.com</span></li>
+      </div>
+
+      <div class="contact-info-Tel">
+        <li>Tel: <span class="extra-text">905-781-0185</span></li>
+      </div>
+
+      <div class="contact-info-Social">
+        <li>Social(s): <span class="extra-text">Instagram</span></li>
+      </div>
+    </div>
+
+
+    <div class="info-bar-copyright">
+      ©2025 Emerson Sanchez. Powered by 5 double cheeseburgers
+    </div>
 
     <div id="nav">
       <ul>
@@ -466,17 +447,5 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-    
-    <div class="headingcontent">
-      <headingcontentani id="headingcontentani">
-         <span class="decor-underlineheading ">Email</span> </headingcontentani>
-    </div>
-
-    <div class="text-animation-box">
-      <nameani id="nameani">CONTACT</nameani>
-    </div>
-
-
-
   </body>
 </html>
