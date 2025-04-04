@@ -14,6 +14,7 @@
     <title>index.html</title>
 
     <style>
+      
       body {
         background-color: #1E2121;
         display: flex;
@@ -25,14 +26,37 @@
         overflow-y: scroll;
       }
 
-      /* All images containers and hover states */
+      /* All images containers*/
 
+      .gallerybox {
+            width: 100%;
+      text-align: center;
+        position: absolute;
+      top: 500px;
+      }
+      
+        .gallery-title {
+      font-size: 48px;
+      font-family: "Poppins", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 600;
+
+    }
+      
+       .gallery-date {
+      font-size: 24px;
+      font-family: "Figtree", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 300;
+         margin-bottom: 50px;
+    }
+      
       .image-gallery {
         column-count: 3;
         width: 100%;
         margin: auto;
-        position: absolute;
-        top: 700px;
       }
 
       .image-containers {
@@ -48,13 +72,41 @@
         height: 100%;
         object-fit: cover;
       }
+
+      
+      /* second gallery */
+      
+      
+          .gallerybox2 {
+            width: 100%;
+      text-align: center;
+        position: absolute;
+      top: 2400px;
+      }
+      
+        .gallery-title2 {
+      font-size: 48px;
+      font-family: "Poppins", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 600;
+
+    }
+      
+       .gallery-date2 {
+      font-size: 24px;
+      font-family: "Figtree", sans-serif;
+          font-style: italic;
+          color: #FFFFFF;
+      font-weight: 300;
+         margin-bottom: 50px;
+    }
+      
       
          .image-gallery2 {
-        column-count: 1;
+      column-count: 3;
         width: 100%;
         margin: auto;
-        position: absolute;
-        top: 1900px;
       }
 
       .image-containers2 {
@@ -65,22 +117,6 @@
         position: relative;
       }
       
-               .image-gallery3 {
-        column-count: 1;
-        width: 100%;
-        margin: auto;
-        position: absolute;
-        top: 3300px;
-      }
-
-      .image-containers3 {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 10px;
-        overflow: hidden;
-        position: relative;
-      }
-
       /*contact info footer */
 
       .contact-info-bar {
@@ -279,15 +315,6 @@
     flex-direction: column;
 }
       
-      .info-box2 {
-    width: 40%; 
-    padding: 10px;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-      
       .info-box.date {
     top: 420px;
     left: 53px;
@@ -303,6 +330,15 @@
     left: 53px;
       }
       
+           .info-box2 {
+    width: 40%; 
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+      
          .info-box2.date {
     top: 580px;
 }
@@ -311,14 +347,21 @@
 left: 500px;
       }
       
-            .info-box.date2 {
-    top: 1740px;
-    left: 53px;
+               .info-box2-2 {
+    width: 40%; 
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
       
-      .info-box.description2 {
-    top: 1600px;
-    left: 53px;
+         .info-box2-2.date {
+    top: 2580px;
+}
+          .info-box2-2.description {
+    top: 2550px;
+left: 500px;
       }
       
 
@@ -361,56 +404,7 @@ left: 500px;
     flex-direction: column;
         right: 25px;
 }
-
-      .decor-underlineheading2 {
-        position: relative;
-        text-align: center;
-        display: inline-block;
-        animation: glow-text 5s infinite ease-in-out;
-      }
-
-      .decor-underlineheading2::after {
-        content: "";
-        display: block;
-        width: 0%;
-        height: 3px;
-        background-color: #FFFFFF;
-        position: absolute;
-        bottom: -10px;
-        animation: lineani2 5s infinite ease;
-      }
-
-      @keyframes glow-text {
-        0% {
-          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
-        }
-
-        20% {
-          text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-        }
-
-        100% {
-          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
-        }
-      }
-
-      @keyframes lineani2 {
-        0% {
-          width: 0%;
-          left: 0%;
-        }
-
-        50% {
-          width: 100%;
-          left: 0%;
-        }
-
-        100% {
-          width: 0%;
-          left: 100%;
-        }
-      }
-
+      
       .paragraphcontent {
         display: block;
         position: absolute;
@@ -429,16 +423,20 @@ left: 500px;
         font-weight: 300;
         color: #FFFFFF;
       }
+   
     </style>
   </head>
   <body>
+      <!-- gallery 1 -->
+      <div class="gallerybox">
+    <h1 class="gallery-title">Written In The Stars</h1>
+    <h1 class="gallery-date">Jan 2024 - April 2024.</h1>
     <div class="image-gallery">
     
       <div class="image-containers">
           <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
       </div>
       
-     
                <div class="image-containers">
           <img src="Written_in_the_Stars_Covers-Indesign_pages-14-15-01.jpg" alt="The first 3D render of a Ghibli Landscape with moving grass, and leaves." class="image-size1">
       </div>
@@ -453,13 +451,47 @@ left: 500px;
       
       <div class="image-containers">
           <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
+      </div>
       </div>   
-      
+       </div>
+    
+    <!-- gallery 2 -->
+       <div class="gallerybox2">
+    <h1 class="gallery-title2">It's Not That Serious!</h1>
+    <h1 class="gallery-date2">Sept. 2024 - Jan. 2025.</h1>
        <div class="image-gallery2">
       <div class="image-containers2">
-          <img src="Distance.png" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+          <img src="It's_Not_That_Serious_covers-2-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
       </div>
+         
+         <div class="image-containers2">
+          <img src="INTS_Pages-30-31rgb-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
       </div>
+         
+               <div class="image-containers2">
+          <img src="INTS_Pages-30-31rgb-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+         
+                <div class="image-containers2">
+          <img src="INTS_Pages-40-41rgb2-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+         
+               <div class="image-containers2">
+          <img src="INTS_Pages-40-41rgb2-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+         
+              <div class="image-containers2">
+          <img src="INTS_Pages-46-47rgb-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+         
+               <div class="image-containers2">
+          <img src="INTS_Pages-46-47rgb-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+               <div class="image-containers2">
+          <img src="It's_Not_That_Serious_covers-2-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
+      </div>
+         </div>
+     
     </div>
     
     
@@ -476,15 +508,6 @@ left: 500px;
     <h1 class="info-header">Date.</h1>
     <p class="info-text">Jan 2024 - April 2025.</p>
 </div>
-    
-            <div class="info-box2 description">
-    <h1 class="info-header2">Written In The Stars</h1>
-</div>
-    
-    <div class="info-box2 date">
-    <p class="info-text2">Jan 2024 - April 2024.</p>
-</div>
-
 
     <div class="contact-info-bar">
       <ul>
