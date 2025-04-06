@@ -103,7 +103,6 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-
       .image-container1:hover .image-titles {
         opacity: 1;
       }
@@ -116,8 +115,8 @@
   transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
 
-      #image-container2 {
-        color: transparent;
+     .image-container2 {
+        background-color: transparent;
         width: 90%;
         height: 800px;
         clear: both;
@@ -127,46 +126,49 @@
         flex-direction: column;
         align-items: center;
         top: 2560px;
-        opacity: 0.1;
-        overflow: hidden;
+        opacity: 1;
         border-radius: 20px;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        overflow: hidden;
+       transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-#image-container2::before {
-    content: "Folgers";
-    font-size: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
-    font-style: italic;
-     color: #1E2121;
-    position: absolute;
-    top: 32%;
-    width: 25%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-      #image-container2::after {
-        content: "REBRANDING & PRODUCT DESIGN";
-      font-size: 40px;
-        font-family: "Figtree", sans-serif;
-        font-weight: 400;
-        width: 51%;
-        color: #1E2121;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      #image-container2:hover {
-        color: #000000;
+      
+     .image-container2:hover img {
         opacity: 1;
         transform: scale(1.01);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-
-      #image-container2:hover::before, #image-container2:hover::after {
+      
+          .image-titles2 {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: 0px;
+        color: #1E2121;
+        font-family: "Poppins", sans-serif;
+        font-size: 95px;
+        font-weight: 650;
+        font-style: italic;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+            .image-titles2 a {
+        color: #1E2121;
+        text-decoration: none;
+        
+      }
+      
+      .image-subtitle2 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 20px;
+  font-family: "Figtree", sans-serif;
+  color: #1E2121;
+  transition: opacity 0.3s ease-in-out;
+}
+      
+      .image-container2:hover .image-titles2 {
         opacity: 1;
       }
 
@@ -174,10 +176,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+ transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
 
-      #image-container3 {
-        color: transparent;
+         .image-container3 {
+        background-color: transparent;
         width: 90%;
         height: 800px;
         clear: both;
@@ -187,49 +190,47 @@
         flex-direction: column;
         align-items: center;
         top: 3460px;
-        opacity: 0.1;
-        overflow: hidden;
+        opacity: 1;
         border-radius: 20px;
+        overflow: hidden;
+       transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+      }
+     .image-container3:hover img {
+        opacity: 0.1;
+        transform: scale(1.01);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
+
+      .image-titles3 {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: 0px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 95px;
+        font-weight: 650;
+        font-style: italic;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .image-titles3 a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
       
-#image-container3::before {
-    content: "In Good Spirits";
-    font-size: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
-    font-style: italic;
-    color: #FFF9F0;
-    position: absolute;
-    top: 35%;
-    width: 50%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+      .image-subtitle3 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 20px;
+  font-family: "Figtree", sans-serif;
+  color: #FFFFFF;
+  transition: opacity 0.3s ease-in-out;
 }
 
-      #image-container3::after {
-        content: "3D DESIGN";
-        font-size: 40px;
-        font-family: "Figtree", sans-serif;
-        font-weight: 400;
-        width: 20%;
-        color: #FFF9F0;
-           bottom: 45%;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      #image-container3:hover {
-        color: #000000;
-        opacity: 1;
-        transform: scale(1.01);
-      }
-#image-container3:hover::before,
-      #image-container3:hover::after {
+      .image-container3:hover .image-titles3 {
         opacity: 1;
       }
       
@@ -238,6 +239,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
 
       /*contact info footer */
@@ -716,15 +718,21 @@
       </a>
     </div>
 
-    <div id="image-container2">
+    <div class="image-container2">
       <a href="BrandDesign.html">
       <img src="folgers_Final_logo_1-03.jpg" alt="A text graphic re-design of the coffee brand: Folgers, that includes a mountian and a slightly hidden sun" class="image-size2">
+         <span class="image-titles2">Folgers
+        <div class="image-subtitle2">BRAND DESIGN</div>
+        </span>
       </a>
     </div>
 
-    <div id="image-container3">
+    <div class="image-container3">
       <a href="3DDesign.html">
       <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
+         <span class="image-titles3">In Good Spirits
+        <div class="image-subtitle3">3d Design</div>
+        </span>
 </a>
     </div>
 
