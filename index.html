@@ -51,7 +51,7 @@
 
       /* All images containers and hover states */
 
-      #image-container1 {
+      .image-container1 {
         background-color: transparent;
         width: 90%;
         height: 800px;
@@ -62,53 +62,58 @@
         flex-direction: column;
         align-items: center;
         top: 1660px;
-        opacity: 0.1;
+        opacity: 1;
         border-radius: 20px;
         overflow: hidden;
+       transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+      }
+     .image-container1:hover img {
+        opacity: 0.1;
+        transform: scale(1.01);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-     #image-container1:before {
-    content: "Written In The Stars";
-    font-size: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
-    font-style: italic;
-     color: #FFF9F0;
-    position: absolute;
-    top: 35%;
-    width: 65%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-      #image-container1::after {
-        content: "LAYOUT DESIGN";
-        font-size: 40px;
-        font-family: "Figtree", sans-serif;
-        font-weight: 400;
-        width: 25%;
-        color: #FFF9F0;
-           bottom: 45%;
+
+      .image-titles {
         position: absolute;
-        justify-content: center;
-        display: flex;
+        width: 100%;
+        top: 40%;
+        left: 0px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 95px;
+        font-weight: 650;
+        font-style: italic;
+        text-align: center;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease-in-out;
       }
 
-      #image-container1:hover {
+      .image-titles a {
+        color: #FFFFFF;
+        text-decoration: none;
+        
+      }
+      
+      .image-subtitle {
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 20px;
+  font-family: "Figtree", sans-serif;
+  color: #FFFFFF;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+      .image-container1:hover .image-titles {
         opacity: 1;
-        transform: scale(1.01);
       }
 
-      #image-container1:hover::before, #image-container1:hover::after {
-        opacity: 1;
-      }
 
       .image-size1 { 
         width: 100%;
         height: 100%;
         object-fit: cover;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
 
       #image-container2 {
@@ -702,9 +707,12 @@
       </video>
     </div>
 
-    <div id="image-container1">
+    <div class="image-container1">
       <a href="LayoutDesign.html">
         <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
+        <span class="image-titles">Written In The Stars
+        <div class="image-subtitle">LAYOUT DESIGN</div>
+        </span>
       </a>
     </div>
 
